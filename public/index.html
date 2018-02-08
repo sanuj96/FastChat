@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FastChat</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+
+</head>
+<body >
+
+
+<div class="container" >
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-8">
+			<img src="img.jpg">
+		</div>
+	</div>
+		<div class="row">
+	    	<div class="col-sm-2"></div>
+	        
+	        <div class="col-sm-8" >
+
+	            <div class="panel panel-primary ">
+	                <div class="panel-heading">
+	                    <span class="glyphicon glyphicon-comment"></span> Chat
+	                </div>
+	                
+	                <div class="row" style="padding-left: 1.24px; padding-right: 1px; padding-top: 3px; padding-bottom: 1px;">
+						<div class="col-sm-12">
+							<div id="feedback"></div>
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th><i class="glyphicon glyphicon-user" style="margin-right: 10px;"></i> User </th>
+										<th><i class="glyphicon glyphicon-envelope" style="margin-right: 10px;"></i> Message</th>
+									</tr>
+								</thead>
+								<tbody id="output">
+								</tbody>
+							</table>
+						</div>
+
+						<div class="col-sm-12">
+							<form>
+							    <div class="input-group">
+								    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					 			    <input id="handle" type="text" class="form-control" name="email" placeholder="Username">
+				  				</div>
+				   				<br>
+
+							    <div class="input-group" >
+							      <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+							      <input id="message" type="text" class="form-control" name="msg" placeholder="Message">
+							    </div>
+				    			<br>
+				 			</form>	
+						</div>	
+	
+						<div class="col-sm-12">
+							<button id="send" class="btn btn-primary btn-lg btn-block">Send</button>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>
